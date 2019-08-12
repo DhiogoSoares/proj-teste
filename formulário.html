@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Formulário
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<body>
+<form>
+	Nome:
+	<input type="text" name="nome" required="required" pattern="[a-Z\s]+$">
+<br><br>
+	Telefone:
+	<input type="text" name="telefone" placeholder="(xxx) xxxxx-xxxx">
+<br><br>
+	Idade:
+	<input type="number" name="idade" min="0" max="150">
+<br><br>
+	Nascimento:
+	<input type="date" name="nascimento" min="0" max="150">
+<br><br>
+	Sexo:
+	<input type="radio" name="sexo" value="masculino">Masculino
+	<input type="radio" name="sexo" value="feminino">Feminino
+<br><br>
+	Documentos:
+	<input type="checkbox" name="documentos" value="rg">RG
+	<input type="checkbox" name="documentos" value="cpf">CPF
+	<input type="checkbox" name="documentos" value="cnh">CNH
+	<input type="checkbox" name="documentos" value="tituloeleitor">Título de Eleitor
+	<input type="checkbox" name="documentos" value="passaporte">Passaporte
+	<input type="checkbox" name="documentos" value="carteiratrab">Carteira de Trabalho
+	<br><br>
+	Envie seu currículo:
+	<input type="file" name="curriculo">	
+	<br><br>
+	Deixe seu comentário:
+	<textarea cols="60" rows="8" style="resize: none"></textarea>
+	<br><br>
+
+	Turno: <select name="turno">
+			<option value="----">-----</option>
+			<option value="manha">Manhã</option>
+			<option value="tarde">Tarde</option>
+			<option value="noite">Noite</option>
+
+
+	</select>
+
+
+<br><br>	
+<input type="submit" name="enviar" value="Cadastrar!">
+</form>	
+</body>
+</html>
